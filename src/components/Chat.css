@@ -1,0 +1,105 @@
+.chat{
+    flex: 0.65;
+    display: flex;
+    flex-direction: column;
+
+}
+.chat_header{
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    border-bottom : 1px solid lightgrey;
+}
+.chat_headerInfo{
+    flex: 1;
+    margin-left: 20px;
+}
+.chat_headerInfo > h2{
+    font-size: 20px;
+}
+
+.chat_headerInfo > p{
+    color: gray;
+}
+
+.chat_headerRight{
+    display: flex;
+    justify-content: space-between;
+    min-width: 100px;
+}
+.chat_header:hover{
+    background-color: lightgrey;
+}
+
+.chat_body{
+    flex: 1;
+    background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMVFRUVFxUXFxgXFxUXGhgXGBgYFxgXFxcYHSggHRolGxgXITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NDg0NDjcZFRk3LSs3KzcrNysrNy0tNzctLSstLSsrKzctLS0tNzcrLS0tLSs3Ny0tLS0rLS0tKy0rLf/AABEIASwAqAMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAABAAIDB//EACgQAAIBAgMIAwEBAAAAAAAAAAABEQLwITFhEkFRcYGRobHB4fHRA//EABUBAQEAAAAAAAAAAAAAAAAAAAAD/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A8kneKpWGZQCerLIJrNFISP8AfYDsvKQoaGq7ZmcQNbUZBBRgVLx4AWw7kVgTQAECnuJMnAFoL43yBFIAlgSFIEwJci34DaJgNKHDQzkTbA0/oDKpvMgFrnBLLIWoxCe4AmOyQNsCS8mnd3kW1vCQBIYV/hVZXe8mgJYE6txPK9f4Td6gV/ZVKOpSDfABawKFF9iTlhSgIWSZPICqY01BJAFIt8r5khYA3zAvJAapYXiDFtgP2ZI1qAOm/AMpFgSe4o19AjU3cAFRY5lBRqBKAFsgKAwKRpYEgbGoIAUhd35DAEwGCjcUg+IGgKWQEg4mkmFVMALM+inEm+oESWAsKagHULka2NQGeotjU4yKrcAUrqURzDZIDUj9GWt6FIAlyNT0Fg4u+QGehP8AgtdheWIGWiFOSqA0RX3IApi/0v8ASoyxAm8CRRzJMAaGr+eib3hmBrZBPJA2NIGkzL/AgsgNXcBtFAJsCSJZ8CqkWvgCpeIQ8h2sAnDMBqyKATJJgN7wbLaZqlZYSgMkTIBRqTJdQGq5w8B5FK8xgDHYdopZYAVLxNJ+zLHa0AyL7bi+QASVOIGpuQGTLbAcmAawPAmwSAeRVX+FVUVNQEyRf0qZAb5AC8kBEkU6CoApJmnjwgw0BPUXxBkwHAkv6G7mKeIDD4k8x2jLyAm9/sBdNwahAYXEvgWEeQNQg+ibCQKoUsQjyUgMME/gaQUgT8kLw+yAuPMmsSpRb9wAkTGL05F9gSWKGcJMwa2gMx7FsL+BTd/wC2iqTBoo4AQubZVLQG9AIYBIUAUonmTYpgUAWya0vqAN4Anv4Dsl00Akru8CHaQARPsEfZLkBIiNTlfgAjmTywGCqvwAWyXIFSTAmNP9+CVJIANagvA07wMsVSW8U71AI33wFU6BMeQ2u4G/j8MLQ1SzKykDTav2C3iyu1xAaX0IzIALQ1U6gmZA1WUgLcgSY8gd4SDQGk8BxM5kgJovRN7wQF09j0LtzJq8gJ+yT3di0LEAqQC8iawAaVlzJuSWQuL/AAAJkybAEQpaAA031DAZCNQHa6EsyVyVKAij18mWjVO4AFUgmbocdQMNDUVQxheoGV+mtriCJUgTc7iperIkAuApJvTAlAFgPIl08Gal1AUL3h7BKcgJ8yH4ICguAPniMywLQKl0LLUoAUVTv8CDQGGa7wF/orMAg1fEy8DVOQA0HQayYFslRmW1oWQCjNZdBkBQVA0NTAHnvFPHQMRkBpzZBGIAT3C57ks8yAuehk1D4AoAV4Jg+QpyANbybGAT7gNVQJmkvnwCz7AUhBfJdwFv8LQJNNx6AGn9jSs+RUgANilfABjyBTjhaKoELyV3uAJ7kVTIBgp+wZSBU5iUlSBIpJO75E12AUwjHmL1vsZYGp+Q33yAVoBJE2EE2Apdhpc8QwBvECqqKBS8kBcgTOjUIwkApmVxJlAE0QsAFE3iU3H8Lt5Apw/QKLmRwgCLEGTzAIHcLRlgadPAs9CZZfIBSjXUPBO8gCMzWy9OwRmW2AJgmKzJaAME/YzIIAWYpoUsLvIEwJuZvkQQQGmzNRpPUzUwFZXoSpLdfH6JQAKrQ1GGE8jBqjMCTYFSxSkCaZVYDPAqtADMtkybaAzIz0Jon7AsSa7Gk45sywLkE8CQ9gKdwJEaf4APEh7dgAYf6gm4KB7gHbzqUA7wJgQ07wg0qr4gZQ2yw4GlSBg1U+YQQFVxCcRZTMgSCmmRdJUuABCkKROADZv6BG7tGXjv4gZg1UNCZlgLwyIGiAepLLAmiS5gWSEGGAFOg9iXkncfQAyNUBAESFewYEKV+QuCT3AdKkc2shbv8AC6YDPQqsg+AJrUoyMs1wAtrsNe4I0J4gBDSQFU7mQ8nRUgleIGGLB/0ownUBqKlwSU94GnHMApf87jBncTYGgfplT8mZA0uhOOPglkaahAC0XcuplG6MQMyUcBpzV8Qaxi8gGHoEClhfEFuu8wBm/j4GML3Gal7AzOBFJAf//Z');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    overflow: scroll;
+    
+}
+
+.chat_message{
+    position: relative;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+.chat_name{
+    position: absolute;
+    top: -14px;
+    font-size: x-small;
+    font-weight: 800;
+    color: white;
+}
+.chat_time{
+    margin-left: 12px;
+    font-size: x-small;
+
+}
+.chat_receiver{
+    background-color: rgb(128, 255, 196);
+    border-radius: 10px;
+    padding: 10px;
+    width: fit-content;
+    margin-left: auto;
+}
+.chat_footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 62px;
+    border-top: 1px solid lightgray;
+}
+
+
+.chat_footer > form {
+    display: flex;
+    flex: 1;
+    padding: 10px;
+}
+.chat_footer > form > input{
+    border-radius: 20px;
+    padding: 15px;
+    flex: 1;
+    border:none;
+}
+.chat_footer > form > button{
+    border: none;
+    border-radius: 20px;
+    /* display: none; */
+}
+
+.chat_footer > .MuiSvgIcon-root {
+    color: gray;
+}
